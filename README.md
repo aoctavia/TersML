@@ -10,24 +10,50 @@
 ---
 
 ## 📂 Struktur Portfolio (GitHub)
-
 ```
-Portfolio-TERS-ML/
-│── README.md                  # project overview
-│── notebooks/                 
-│   ├── 01_data_exploration.ipynb     # QM9 vibrational spectra analysis
-│   ├── 02_feature_representation.ipynb # graph vs spectral fingerprints
-│   ├── 03_model_training.ipynb     # CNN / GNN for prediction
-│   ├── 04_results_visualization.ipynb # plots, metrics, comparison
-│── src/
-│   ├── dataset.py              # data loaders (QM9 or custom DFT)
-│   ├── models.py               # CNN / GNN implementation
-│   ├── train.py                # training loop
-│   └── utils.py                # helpers, metrics
-│── figures/                    # generated spectra, confusion matrix, etc.
-│── refs/                       # references to spectroscopy & ML
-│── requirements.txt            # environment setup
-│── LICENSE
+TERS-ML-Portfolio/
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ requirements.txt                 # untuk local/dev; Colab install via cells
+├─ notebooks/
+│  ├─ 00_colab_setup.ipynb          # install deps (PyTorch Geometric/DeepChem), mount Drive (opsional)
+│  ├─ 01_data_exploration_qm9.ipynb # EDA: vibrational modes → synthetic Raman spectra
+│  ├─ 02_feature_repr.ipynb         # graph (GNN) vs 1D spectrum (CNN) representations
+│  ├─ 03_train_gnn.ipynb            # GNN (SchNet/GraphConv) → predict freq/intensity
+│  ├─ 04_train_cnn.ipynb            # 1D CNN → classify spectra / regress intensities
+│  ├─ 05_results_visualization.ipynb# overlay spectra, confusion matrix, metrics
+│  └─ 06_export_report.ipynb        # export figures & summary (PDF/Markdown)
+├─ src/
+│  ├─ __init__.py
+│  ├─ dataset.py                    # loader QM9 + generator synthetic Raman
+│  ├─ features.py                   # fingerprints, graph builders, normalization
+│  ├─ models.py                     # GNN (e.g., SchNet/MPNN) & 1D-CNN
+│  ├─ train.py                      # training loops + checkpoints
+│  ├─ metrics.py                    # MAE/RMSE/Acc/F1, spectral distance (e.g., MSE/DTW)
+│  └─ viz.py                        # plotting spectra, confusion matrix, scatter parity
+├─ data/
+│  ├─ README_DATA.md                # petunjuk ambil QM9 / cache di Colab
+│  └─ (auto-generated caches)       # .gitignore akan mengabaikan ini
+├─ figures/
+│  ├─ examples/                     # overlay spectra (GT vs ML)
+│  ├─ confusion_matrices/
+│  └─ curves/                       # loss/metric curves
+├─ results/
+│  ├─ logs/                         # tensorboard / csv logs
+│  ├─ checkpoints/                  # model weights (opsional, besar → rilis)
+│  └─ tables/                       # metrics & ablations csv
+├─ refs/
+│  ├─ refs.bib                      # sitasi Raman/TERS/DFT/ML
+│  └─ reading_list.md               # 5–10 paper kunci + 1–2 kalimat takeaway
+├─ scripts/
+│  ├─ prepare_qm9.py                # unduh/preprocess (opsional untuk lokal)
+│  ├─ gen_synthetic_raman.py        # buat spek Raman dari vibrational modes
+│  └─ export_report.py              # gabung hasil → md/pdf (opsional)
+├─ docs/
+│  ├─ portfolio-summary.pdf         # mini-paper 2–3 halaman (opsional)
+│  └─ template.tex                  # template LaTeX ringkas (Elsevier-like)
+└─ CITATION.cff                     # metadata sitasi repo (opsional)
 ```
 
 ---
