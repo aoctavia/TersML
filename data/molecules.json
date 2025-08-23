@@ -1,0 +1,26 @@
+[
+  {
+    "id": "benzene",
+    "formula": "C6H6"
+  },
+  {
+    "id": "naphthalene",
+    "formula": "C10H8"
+  },
+  {
+    "id": "anthracene",
+    "formula": "C14H10"
+  },
+  {
+    "id": "pyrene",
+    "formula": "C16H10"
+  },
+  {
+    "id": "coronene",
+    "formula": "C24H12"
+  },
+  {
+    "id": "gnf_small",
+    "formula": "C24H12 (graphene nanoflake)"
+  }
+]

@@ -1,0 +1,163 @@
+<html><head><meta charset='utf-8'><title>TERS+ML Summary</title></head><body>
+<h1>TERS + Machine Learning — Portfolio Summary</h1>
+<p>This page summarizes results from CNN1D (spectra) and ViT (TERS maps).</p>
+<h2>Overall Metrics</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>test_acc</th>
+      <th>test_f1_macro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CNN1D (spectra)</td>
+      <td>0.173913</td>
+      <td>0.049383</td>
+    </tr>
+    <tr>
+      <td>ViT (TERS maps)</td>
+      <td>0.163636</td>
+      <td>0.113140</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Per-class Metrics (CNN vs ViT)</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>class</th>
+      <th>f1-score_cnn</th>
+      <th>f1-score_vit</th>
+      <th>precision_cnn</th>
+      <th>precision_vit</th>
+      <th>recall_cnn</th>
+      <th>recall_vit</th>
+      <th>support_cnn</th>
+      <th>support_vit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>accuracy</td>
+      <td>0.173913</td>
+      <td>0.163636</td>
+      <td>0.173913</td>
+      <td>0.163636</td>
+      <td>0.173913</td>
+      <td>0.163636</td>
+      <td>0.173913</td>
+      <td>0.163636</td>
+    </tr>
+    <tr>
+      <td>anthracene</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>8.000000</td>
+      <td>9.000000</td>
+    </tr>
+    <tr>
+      <td>benzene</td>
+      <td>0.000000</td>
+      <td>0.235294</td>
+      <td>0.000000</td>
+      <td>0.160000</td>
+      <td>0.000000</td>
+      <td>0.444444</td>
+      <td>7.000000</td>
+      <td>9.000000</td>
+    </tr>
+    <tr>
+      <td>coronene</td>
+      <td>0.296296</td>
+      <td>0.250000</td>
+      <td>0.173913</td>
+      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.200000</td>
+      <td>8.000000</td>
+      <td>10.000000</td>
+    </tr>
+    <tr>
+      <td>gnf_small</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>8.000000</td>
+      <td>9.000000</td>
+    </tr>
+    <tr>
+      <td>macro avg</td>
+      <td>0.049383</td>
+      <td>0.113140</td>
+      <td>0.028986</td>
+      <td>0.104949</td>
+      <td>0.166667</td>
+      <td>0.162963</td>
+      <td>46.000000</td>
+      <td>55.000000</td>
+    </tr>
+    <tr>
+      <td>naphthalene</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>7.000000</td>
+      <td>9.000000</td>
+    </tr>
+    <tr>
+      <td>pyrene</td>
+      <td>0.000000</td>
+      <td>0.193548</td>
+      <td>0.000000</td>
+      <td>0.136364</td>
+      <td>0.000000</td>
+      <td>0.333333</td>
+      <td>8.000000</td>
+      <td>9.000000</td>
+    </tr>
+    <tr>
+      <td>weighted avg</td>
+      <td>0.051530</td>
+      <td>0.115629</td>
+      <td>0.030246</td>
+      <td>0.109102</td>
+      <td>0.173913</td>
+      <td>0.163636</td>
+      <td>46.000000</td>
+      <td>55.000000</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Figures</h2>
+<div><p><b>cnn1d_loss.png</b></p><img src='../figures/curves/cnn1d_loss.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>cnn1d_acc.png</b></p><img src='../figures/curves/cnn1d_acc.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>cnn1d_f1.png</b></p><img src='../figures/curves/cnn1d_f1.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>cnn1d_confusion_matrix.png</b></p><img src='../figures/confusion_matrices/cnn1d_confusion_matrix.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>vit_loss.png</b></p><img src='../figures/curves/vit_loss.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>vit_acc.png</b></p><img src='../figures/curves/vit_acc.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>vit_f1.png</b></p><img src='../figures/curves/vit_f1.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>vit_confusion_matrix.png</b></p><img src='../figures/confusion_matrices/vit_confusion_matrix.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>per_class_f1_cnn_vs_vit.png</b></p><img src='../figures/curves/per_class_f1_cnn_vs_vit.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>cnn1d_inference_examples.png</b></p><img src='../figures/curves/cnn1d_inference_examples.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>vit_inference_montage.png</b></p><img src='../figures/ters_maps/vit_inference_montage.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>cnn1d_loss_replot.png</b></p><img src='../figures/curves/cnn1d_loss_replot.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>cnn1d_acc_replot.png</b></p><img src='../figures/curves/cnn1d_acc_replot.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>cnn1d_f1_replot.png</b></p><img src='../figures/curves/cnn1d_f1_replot.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>cnn1d_confusion_matrix_replot.png</b></p><img src='../figures/confusion_matrices/cnn1d_confusion_matrix_replot.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>vit_loss_replot.png</b></p><img src='../figures/curves/vit_loss_replot.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>vit_acc_replot.png</b></p><img src='../figures/curves/vit_acc_replot.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>vit_f1_replot.png</b></p><img src='../figures/curves/vit_f1_replot.png' style='max-width: 100%; height: auto;'/></div><hr/>
+<div><p><b>vit_confusion_matrix_replot.png</b></p><img src='../figures/confusion_matrices/vit_confusion_matrix_replot.png' style='max-width: 100%; height: auto;'/></div><hr/>
+</body></html>

@@ -1,0 +1,13 @@
+torch
+torchvision
+torchaudio
+numpy
+pandas
+matplotlib
+scikit-learn
+tqdm
+pyyaml
+pytorch-lightning==2.4.0
+rdkit-pypi
+timm
+torch-geometric
