@@ -117,3 +117,7 @@ statistics.md        # equations (math/physics/stats used)
 ## License
 
 MIT License
+
+## Paperwork
+([Paperwork TersML (PDF)](https://github.com/aoctavia/TersML/blob/main/TersML-paperwork.pdf))  
+
