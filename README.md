@@ -62,7 +62,7 @@ Key figures live in `figures/` (see the All-Figures PDF for a full index). Typic
 ## How to Run
 **Colab (recommended):**
 
-[![Open 00_setup in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aoctavia/TersML/blob/main/notebooks/00_colab_setup.ipynb)
+[![Open 00_setup in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/aoctavia/TersML/blob/main/tersML.ipynb)
 
 **Notebook order:**
 1. `00_colab_setup.ipynb` — environment & project scaffold  
@@ -114,6 +114,6 @@ statistics.md        # equations (math/physics/stats used)
 
 ---
 
-## 📝 License
+## License
 
 MIT License
