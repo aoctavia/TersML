@@ -110,6 +110,7 @@ results/             # tables, checkpoints, reports
 docs/                # portfolio-summary.pdf, all-figures-portfolio.pdf
 scripts/             # helpers (e.g., export_all_figures_pdf.py)
 statistics.md        # equations (math/physics/stats used)
+paperwork            #draft paper from this research
 ```
 
 ---
