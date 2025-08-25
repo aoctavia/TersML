@@ -91,15 +91,6 @@ python -c "import torch, timm; print('OK', torch.__version__)"
 
 ---
 
-## References (selection)
-
-* O. J. Silveira *et al.*, *Raman tensors in low-symmetry 2D materials*, J. Raman Spectrosc. (2021).
-* O. J. Silveira *et al.*, *Local probe-induced structural isomerization*, Nat. Commun. (2023).
-* O. J. Silveira *et al.*, *Frustration-Induced Many-Body Degeneracy in Spin-1/2 Molecular Quantum Rings*, JACS (2025).
-* T. Schütt *et al.*, *SchNet: Deep Learning for Quantum Chemistry*, JCTC (2018).
-
----
-
 ## Repo Map
 
 ```
