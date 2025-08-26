@@ -113,3 +113,7 @@ MIT License
 ## Paperwork
 ([Paperwork TersML (PDF)](https://github.com/aoctavia/TersML/blob/main/TersML-paperwork.pdf))  
 
+## Publication
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16946119.svg)](https://doi.org/10.5281/zenodo.16946119)
+
