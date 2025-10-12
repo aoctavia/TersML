@@ -287,4 +287,7 @@ $$
 * \$\eta\$: learning rate; \$T\_{\max}\$: cosine period (epochs/steps)
 * \$TP,FP,FN\$: true/false positive/negative counts
 
+
+  ## Note : some of equations can't show on Readme and not completed, so i will rewrite with other tools
+
 ---
